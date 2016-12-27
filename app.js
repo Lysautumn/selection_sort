@@ -1,4 +1,6 @@
+// will not run code until loaded
 $(document).ready(function () {
+  // function to find the minimum value and its index
   var findMinIndexAndValue = function (input, start) {
     var minVal = input[start];
     var minIndex = start;
@@ -12,12 +14,14 @@ $(document).ready(function () {
     return minIndex;
   };
 
+  // function to switch spots of values when sorting
   var sortSwitch = function (input, firstIndex, secondIndex) {
     var tempVar = input[firstIndex];
     input[firstIndex] = input[secondIndex];
     input[secondIndex] = tempVar;
   };
 
+  // function to sort input using two functions above
   var selectionSort = function (input) {
     var min;
     for (var iterator = 0; iterator < input.length; iterator++) {
