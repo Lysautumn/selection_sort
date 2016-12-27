@@ -10,7 +10,7 @@ $(document).ready(function () {
         minVal = input[iterator];
       }
     }
-
+    
     return minIndex;
   };
 
